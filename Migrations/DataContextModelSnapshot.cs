@@ -34,9 +34,6 @@ namespace easygroceries.Migrations
                     b.Property<string>("CustomerSecondName")
                         .HasColumnType("TEXT");
 
-                    b.Property<decimal>("Discount")
-                        .HasColumnType("TEXT");
-
                     b.Property<string>("HouseNumberName")
                         .HasColumnType("TEXT");
 
@@ -64,7 +61,6 @@ namespace easygroceries.Migrations
                             Country = "UK",
                             CustomerFirstName = "Bill",
                             CustomerSecondName = "Gates",
-                            Discount = 0m,
                             HouseNumberName = "222",
                             MembershipId = 0,
                             Postcode = "NW5 8MM",
@@ -78,7 +74,6 @@ namespace easygroceries.Migrations
                             Country = "UK",
                             CustomerFirstName = "Jon",
                             CustomerSecondName = "Snow",
-                            Discount = 0m,
                             HouseNumberName = "1",
                             MembershipId = 0,
                             Postcode = "SW1 1LP",

@@ -15,7 +15,7 @@ builder.Services.AddCors(options =>
             builder
             .AllowAnyMethod()
             .AllowAnyHeader()
-            .WithOrigins("http://localhost:3000", "https://appname.azurestaticapps.html");
+            .WithOrigins("http://localhost:3000", "https://easygroceryapi.azure-api.net");
         }
         );
 });

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Lu2gmftyA65YqI9WJYJDehmhYw9zPOM8NHuxdj0Z7JGE/hwav9aVEf4PZ0VbU3i++GzxxGX34UdXRombdfwIMw==",
+  "dgSpecHash": "XWCt2JLthoFzgpfdD6KwR6QzrX8b//dzvPe+CJF7XDrtti9yfIejKPnj5nOWIfynSriDaKKbIV5/AnP5vn8BXw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Jude\\source\\repos\\EcommerceShop\\easygroceries\\easygroceries.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,8 @@
     "C:\\Users\\Jude\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
     "C:\\Users\\Jude\\.nuget\\packages\\gitforwindows\\2.39.1\\gitforwindows.2.39.1.nupkg.sha512",
     "C:\\Users\\Jude\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\Jude\\.nuget\\packages\\microsoft.applicationinsights\\2.21.0\\microsoft.applicationinsights.2.21.0.nupkg.sha512",
+    "C:\\Users\\Jude\\.nuget\\packages\\microsoft.applicationinsights.dependencycollector\\2.21.0\\microsoft.applicationinsights.dependencycollector.2.21.0.nupkg.sha512",
     "C:\\Users\\Jude\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\6.0.0\\microsoft.aspnetcore.jsonpatch.6.0.0.nupkg.sha512",
     "C:\\Users\\Jude\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\6.0.0\\microsoft.aspnetcore.mvc.newtonsoftjson.6.0.0.nupkg.sha512",
     "C:\\Users\\Jude\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
