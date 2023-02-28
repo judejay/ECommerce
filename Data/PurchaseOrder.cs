@@ -6,18 +6,20 @@ namespace easygroceries.Data
     public class PurchaseOrder 
     {
         [Key]
-        public int Id { get; set; }
+        public int PurchaseOrderId { get; set; }
 
 
 
         [Column(TypeName =" decimal(8,2)")]
-        public decimal TotalPrice { get; set; }
+        public decimal GrandTotal { get; set; }
 
-        public int CustomerId { get; set; }
 
         //public Membership MemberShip { get; set; }
-     
-
-        public Customer Customer { get; set; }
+       // [ForeignKey(nameof(CartId))]
+       // public int CartId { get; set; }
+        public virtual Cart Cart { get; set; }
+     //   [ForeignKey(nameof(CustomerId))]
+       // public int CustomerId { get; set; }
+        public  virtual Customer Customer { get; set; }
     }
 }

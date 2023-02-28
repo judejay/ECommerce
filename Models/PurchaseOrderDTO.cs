@@ -11,11 +11,16 @@ namespace easygroceries.Models
             [Key]
             public int PurchaseOrderId { get; set; }
 
-            public Cart Cart { get; set; }
-        public decimal TotalPrice { get; set; }
+            public virtual CartDTO CartDTO { get; set; }
+        [Column(TypeName = " decimal(8,2)")]
 
-            [ForeignKey(nameof(CustomerId))]
-            public int CustomerId { get; set; }
-            public CustomerDTO CustomerDTO { get; set; }
+        public decimal GrandTotal { get; set; }
+
+         
+       // [ForeignKey(nameof(CartId))]
+       // public int CartId { get; set; }  
+      //  [ForeignKey(nameof(CustomerId))]
+          // public int CustomerId { get; set; }
+        public virtual CustomerDTO CustomerDTO { get; set; }
     }
 }

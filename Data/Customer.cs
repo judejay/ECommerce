@@ -12,8 +12,8 @@ namespace easygroceries.Data
 
         public string CustomerSecondName { get; set; } = string.Empty;
         
-        public int MembershipId { get; set; }
-        public bool Active { get; set; }
+        public int? MembershipId { get; set; }
+        public bool?  Active { get; set; }
         public string HouseNumberName { get; set; } = string.Empty;
 
         public string StreetName { get; set; } = string.Empty;

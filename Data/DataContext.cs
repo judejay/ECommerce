@@ -12,7 +12,7 @@ namespace easygroceries.Data
         public DbSet<Customer> Customers { get; set; }
 
         public DbSet<PurchaseOrder> PurchaseOrders { get; }
-        public DbSet<Grocery> Groceries { get; set; }
+        public DbSet<Product> Products { get; set; }
       
 
 
@@ -25,82 +25,82 @@ namespace easygroceries.Data
 
        
 
-           modelBuilder.Entity<Grocery>().HasData(
-                 new Grocery
+           modelBuilder.Entity<Product>().HasData(
+                 new Product
                  {
-                     GroceryId = 1,
+                     ProductId = 1,
                      Name = "Apples",
-                     Slug = "apples",
+                    // Slug = "apples",
                      Description = "Juicy apples",
                      Price = 1.50M,
                      Image = "https://images.pexels.com/photos/1453713/pexels-photo-1453713.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-                     Quantity = 50
+                     QuantityInStock = 50
 
                  },
-                 new Grocery
+                 new Product
                  {
-                     GroceryId = 2,
+                     ProductId = 2,
                   Name = "Bananas",
-                  Slug = "bananas",
+                 // Slug = "bananas",
                   Image= "https://images.pexels.com/photos/1093038/pexels-photo-1093038.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
                   Description = "Fresh bananas",
                   Price = 3.50M,
-                     Quantity = 50
+                     QuantityInStock = 50
 
                  },
-                 new Grocery
+                 new Product
                  {
-                     GroceryId = 3,
+                     ProductId = 3,
                  Name = "Watermelon",
-                 Slug = "watermelon",
+                // Slug = "watermelon",
                  Description = "Juicy watermelon",
                  Image = "https://images.pexels.com/photos/1313267/pexels-photo-1313267.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
                  Price = 2.50M,
-                     Quantity = 50
+                     QuantityInStock = 50
 
                  },
-                 new Grocery
+                 new Product
                  {
-                     GroceryId = 4,
+                     ProductId = 4,
                  Name = "Grapefruit",
-                 Slug = "grapefruit",
+                // Slug = "grapefruit",
                  Description = "Juicy grapefruit",
                  Price = 2M,
                   Image = "https://images.pexels.com/photos/2247211/pexels-photo-2247211.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-                     Quantity = 50
+                     QuantityInStock = 50
 
                  },
-                 new Grocery
+                 new Product
                  {
-                     GroceryId = 5,
+                     ProductId = 5,
                  Name = "Milk",
-                 Slug = "milk",
+                 //Slug = "milk",
                  Description = "The best of cows",
                  Price = 1.99M,
                  Image = "https://images.pexels.com/photos/248412/pexels-photo-248412.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-                     Quantity = 50
+                     QuantityInStock = 50
 
                  },
-                 new Grocery
+                 new Product
                  {
-                     GroceryId = 6,
+                     ProductId = 6,
                  Name = "Bread",
-                 Slug = "bread",
+                // Slug = "bread",
                  Description = "Easy toast",
                  Price = 1.99M,
                  Image = "https://images.pexels.com/photos/166021/pexels-photo-166021.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-                     Quantity = 50
+                     QuantityInStock = 50
 
                  },
-                 new Grocery
+                 new Product
                  {
-                     GroceryId = 7,
+                     ProductId = 7,
                  Name = "Eggs",
-                 Slug = "eggs",
+                // Slug = "eggs",
                  Description = "Wild chicken",
                  Price = 1.99M,
                  Image = "https://images.pexels.com/photos/600615/pexels-photo-600615.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-                     Quantity = 50
+                     QuantityInStock = 50
 
                  }
            );
@@ -129,14 +129,7 @@ namespace easygroceries.Data
                 Postcode = "SW1 1LP",
                 Country = "UK"
             });
-            modelBuilder.Entity<PurchaseOrder>().HasData(
-                new PurchaseOrder
-                {
-                    TotalPrice = 40M,
-                    Id = 1,
-                    CustomerId = 2
-                }
-                );
+           
         }
     }
 

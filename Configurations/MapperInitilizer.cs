@@ -11,7 +11,9 @@ namespace easygroceries.Configurations
             CreateMap<Customer, CustomerDTO>()
                 .ReverseMap();
             CreateMap<PurchaseOrder, PurchaseOrderDTO>().ReverseMap();
-            CreateMap<Grocery, GroceryDTO>().ReverseMap();
+            CreateMap<Product, ProductDTO>().ReverseMap();
+            CreateMap<Cart, CartDTO>().ReverseMap();
+            CreateMap<CartItem, CartItemDTO>().ReverseMap();
 
         }
     }

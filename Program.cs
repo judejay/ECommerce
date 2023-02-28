@@ -5,6 +5,10 @@ using easygroceries.Repository;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Logging.ClearProviders();
+builder.Logging.AddConsole();
+
+
 
 //CORS
 builder.Services.AddCors(options =>

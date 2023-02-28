@@ -12,7 +12,7 @@ namespace easygroceries.Repository
         }
 
         private IGenericRepository<Customer> _customers;
-        private IGenericRepository<Grocery> _groceries;
+        private IGenericRepository<Product> _products;
         private IGenericRepository<PurchaseOrder> _purchaseOrders;
 
 
@@ -20,7 +20,7 @@ namespace easygroceries.Repository
 
 
 
-        public IGenericRepository<Grocery> Groceries => _groceries ??= new GenericRepository<Grocery>(_context);
+        public IGenericRepository<Product> Products => _products ??= new GenericRepository<Product>(_context);
 
         public IGenericRepository<PurchaseOrder> PurchaseOrders => _purchaseOrders ??= new GenericRepository<PurchaseOrder>(_context);
 

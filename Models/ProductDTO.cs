@@ -4,17 +4,20 @@ using System.ComponentModel.DataAnnotations;
 
 namespace easygroceries.Models
 {
-    public class GroceryDTO
+    public class ProductDTO
     {
 
         [Key]
-        public int GroceryId { get; set; }
+        public int ProductId { get; set; }
         [Required]
         public string Description { get; set; } = string.Empty;
+        [Column(TypeName = " decimal(8,2)")]
+
         public decimal Price { get; set; }
-        public string Slug { get; set; }
-        public int Quantity { get; set; }
+        //public string Slug { get; set; }
+        //public int Quantity { get; set; }
         public string Image { get; set; }
+        public int QuantityInStock { get; set; }
 
         public string Name { get; set; } = string.Empty;
 
